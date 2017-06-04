@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!--CSS-->
+    <link href="~/Assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/Errors.css" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body>
+    <h1 style="text-align: center">Example login using KO</h1>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" class="form-control" data-bind="value: username" placeholder="Username"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" class="form-control" data-bind="value: email" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password:</label>
+                    <input type="password" id="password" class="form-control" data-bind="value: password" placeholder="Password"/>
+                </div>
+                <div class="form-group">
+                    <label for="captcha">Am I So Handsome???(y/n)</label>
+                    <input type="text" id="captcha" class="form-control" data-bind="value: captcha" placeholder="Captcha"/>
+                </div>
+                <button type="button" class="btn btn-success" data-bind="click: submit">
+                    <span class="glyphicon  glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> OK
+                </button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <!--Jquery JS-->
+    <script src="~/Assets/jquery-3.1.1.min.js"></script>
+    <!--Knoutout JS-->
+    <script src="~/Assets/knockout-3.4.2.js"></script>
+    <script src="~/Assets/knockout.validation.js"></script>
+    <script src="~/Assets/Validation_login.js"></script>
+</body>
+</html>
